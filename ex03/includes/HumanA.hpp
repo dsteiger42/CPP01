@@ -15,13 +15,16 @@
 
 # include <iostream>
 # include <string>
+#include "Weapon.hpp"
 
 class HumanA
 {
     private:
         std::string _name;
+        Weapon &_weapon; // by reference always has a weapon. Initialized at construction
+
     public:
-        HumanA();
+        HumanA(const std::string &name, Weapon &weapon);
         ~HumanA();
         void attack();
 };

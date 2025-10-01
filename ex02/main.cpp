@@ -17,7 +17,7 @@ int main(void)
 {
     std::string str = "HI THIS IS BRAIN";
     std::string *stringPTR = &str; //stores the adress of a string. &str is the adress of a string
-    std::string &stringREF = str; //lets you acess the value. str has the value.
+    std::string &stringREF = str; //lets you acess the value of str
 
     std::cout << &str << std::endl;
     std::cout << stringPTR << std::endl;

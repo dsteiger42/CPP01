@@ -12,21 +12,23 @@
 
 #include "../includes/Weapon.hpp"
 
-Weapon::Weapon()
+Weapon::Weapon() : _type("unknown")
 {
-    
+}
+
+Weapon::Weapon(const std::string &type) : _type(type)
+{
 }
 Weapon::~Weapon()
 {
-    
 }
 
-std::string Weapon::getType()
+std::string Weapon::getType() const
 {
-    
+    return _type;
 }
 
-void Weapon::setType(std::string value)
+void Weapon::setType(const std::string &value)
 {
-    
+    _type = value;
 }
